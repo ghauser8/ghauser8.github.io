@@ -1,5 +1,5 @@
 ## Welcome to GitHub Pages
-![Greg]({{BASE_PATH}}/Greg.jpg)
+![Greg]({{BASE_PATH}}/images/Greg.jpg)
 
 You can use the [editor on GitHub](https://github.com/ghauser8/ghauser8.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
 
