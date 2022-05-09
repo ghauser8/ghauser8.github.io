@@ -1,19 +1,28 @@
 function togHide() {
-    if (this.tyle.visibility === 'hidden') {
-        this.style.visibility = 'visible';
-    } else {
-        this.style.visibility = "hidden";
+    let prnt = this.parentNode;
+    let Ps = prnt.querySelectorAll('p');
+    for (let paras of Ps) {
+        if (paras.style.visibility === 'hidden') {
+            paras.style.visibility = 'visible';
+        } else {
+            paras.style.visibility = "hidden";
+        }
     }
+    
 }
 
-const academicExpP = document.querySelector('.academicExp').querySelectorAll('p');
-const professionalExpP = document.querySelector('.ProExp').querySelectorAll('p');
-const technicalExpP = document.querySelector('.TechExp').querySelectorAll('p');
+const academicExpH3 = document.querySelector('.academicExp').querySelector('h3');
+const professionalExpH3 = document.querySelector('.proExp').querySelector('h3');
+const technicalExpH3 = document.querySelector('.techExp').querySelector('h3');
+//const academicExpP = document.querySelector('.academicExp').querySelectorAll('p');
+//const professionalExpP = document.querySelector('.proExp').querySelectorAll('p');
+//const technicalExpP = document.querySelector('.techExp').querySelectorAll('p');
 
-Exps = [academicExpP, professionalExpP, technicalExpP]
+ExpsH = [academicExpH3, professionalExpH3, technicalExpH3]
+//Exps = [academicExpP, professionalExpP, technicalExpP]
 
-for (let exp of Exps) {
-    exp.addEventListener('click', togHide);
+for (let i = 0; i < 3; i++) {
+    ExpsH[i].addEventListener('click', togHide);
 }
 
 
