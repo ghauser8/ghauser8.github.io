@@ -1,14 +1,45 @@
-body,
+body
+.bod,
 .intro,
 .aboutCard {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
+    
 }
 
-body {
+.bod {
     padding: 50px;
 }
+
+.headBanner,
+.footBanner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: darkslategray;
+    padding: 10px;
+}
+
+.headBanner {
+    height: 70px;
+}
+
+.headBanner .logo a {
+    color: grey;
+    font-size: 60px;
+    font-family: 'Palatino';
+    text-decoration: none;
+}
+
+.pLinks a {
+    color: grey;  
+    padding: 10px 
+}
+
+
 
 
 img {
@@ -17,12 +48,28 @@ img {
 
 h1 {
     font-size: 60px;
+    font-family: 'Palatino';
 }
 
 p {
     text-align: center;
+    font-family: 'Palatino';
 }
 
 .aboutCard p {
     text-align: left;
+    
 }
+
+.aboutCard {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* 
+.footBanner {
+    display: flex;
+    justify-content: center;
+    justify-self: flex-end;
+} */
+

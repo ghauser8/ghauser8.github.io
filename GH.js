@@ -8,6 +8,7 @@ function togHide() {
             paras.style.visibility = "hidden";
         }
     }
+    prnt.style.height = 'fit-content';
     
 }
 
