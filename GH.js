@@ -63,7 +63,7 @@ if (document.documentURI.slice(-10) === 'about.html') {
     //cTs[0].addEventListener('click', ()=> cTs[0].innerHTML= 'p')
     let obj;
     let ans;
-    for (i = 0; i < cTAns.length; i++) {
+    for (i = 0; i < cTs.length; i++) {
         if (i > 0) {
             cTs[i].addEventListener('click',function () {this.innerHTML = this.className});
         } else{
